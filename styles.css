@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #FF4111;
+    --secondary-color: #2C3E50;
+    --accent-color: #3498DB;
+    --text-color: #2C3E50;
+    --light-gray: #F8F9FA;
+    --border-color: #E9ECEF;
+    --white-color: #FFFFFF;
+    --hover-btn: rgba(255, 255, 255, 0.1);
+    --limegreen: #32CD32;
+    --darkgolden: #AA6C39;
+    --black: #000000;
+    --Lightgray: #d3d3d3;
+    --darkgray: #0f0f0f;
+    --bluepetroleo: #003153;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--secondary-color);
+    background-color: var(--border-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--black);
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+h1 {
+    font-size: 32px;
+    color: var(--darkgolden);
+    font-weight: bold;
+}
+
+.bi-lightning-fill {
+    color: var(--darkgolden);
+    font-size: 32px;
+}
+
+.box-busca {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 32px;
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    color: var(--Lightgray);
+    border-radius: 24px;
+    background-color: var(--darkgray);
+}
+
+.box-busca input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--darkgray);
+    color: var(--Lightgray);
+    padding: 8px;
+    font-size: 16px;
+}
+
+.bi-search {
+    color: var(--darkgolden);
+}
+
+
+.box-categorias {
+    display: flex;
+    justify-content: center;
+    background-color: var(--bluepetroleo);
+}
+
+.box-categorias nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 8px 32px;
+}
+
+.botao-categorias {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    border: none;
+    border-radius: 24px;
+    color: var(--Lightgray);
+    background: none;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+.botao-categorias:hover {
+    background-color: var(--hover-btn);
+}
+
+.botao-categorias.ativo {
+    background-color: var(--darkgolden);
+}
+
+.secao-hero {
+    color: var(--darkgolden);
+    text-align: center;
+    padding: 48px 32px;
+    background: #AA6C39;
+    background: linear-gradient(90deg, rgba(170, 108, 57, 1) 0%, rgba(0, 0, 0, 1) 24%, rgba(0, 0, 0, 1) 76%, rgba(170, 108, 57, 1) 100%);
+}
+
+.title-destaque {
+    font-family: 'Exo 2', sans-serif;
+}
+
+footer {
+    background-color: var(--bluepetroleo);
+    color: var(--light-gray);
+    text-align: center;
+    padding: 32px;
+}
+
+
+.produtos{
+    width: 100%;
+    max-width: 1200px;
+    padding: 32px;
+    margin: 0 auto;
+}
+
+.produtos-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px,1fr));
+    gap: 20px;
+}
+
+.cartao-produto {
+    background-color: var(--light-gray);
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    cursor: pointer;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.cartao-produto:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    transform: translateY(-16px);
+}
+
+.imagem-produto {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.info-produto {
+    padding: 16px;
+}
+
+.nome-produto {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.descricao-produto {
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.preco-produto {
+    font-size: 20px;
+    color: var(--darkgolden);
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.botao-produto {
+    width: 100%;
+    background-color: var(--bluepetroleo);
+    color: var(--light-gray);
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.botao-produto:hover {
+    background-color: var(--accent-color);
+}
